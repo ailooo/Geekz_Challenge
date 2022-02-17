@@ -40,7 +40,7 @@ class _DetailNewsState extends State<DetailNews> {
           backgroundColor: cGreen,
           title: const Text(
             "Detail News",
-            style: const TextStyle(
+            style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w600
             ),
@@ -61,7 +61,7 @@ class _DetailNewsState extends State<DetailNews> {
                 Row(
                   children: [
                     Text(
-                      widget.detailNews != null && widget.detailNews!.author != null ?
+                      widget.detailNews != null && widget.detailNews!.author != null && widget.detailNews!.author != '-'?
                       widget.detailNews!.author.toString() :  "No Author",
                       style: const TextStyle(
                         fontSize: 12,
